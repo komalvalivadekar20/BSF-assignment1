@@ -1,0 +1,446 @@
+Assignment 1
+
+1) Write a Java program to print 'Hello' on screen and then print your name on a separate line.
+class Hello
+{
+public static void main(String args[])
+	{
+System.out.println("Hello");
+	}
+}
+======================================================================================
+
+2) Write a Java program to print the sum of two numbers.
+import java.util.Scanner;
+class SumOfTwo
+{
+	public static void main(String args[])
+	{
+	Scanner sc=new Scanner(System.in);
+	int num1,num2,sum;
+	System.out.println("Input the first number:  ");
+	num1=sc.nextInt();
+System.out.println("Input the Second number:  ");
+	num2=sc.nextInt();
+System.out.println(num1+ " + " +num2);
+	sum=num1+num2;
+	System.out.println("Sum of number: "+sum);
+}
+}
+
+===================================================================================
+3) Write a Java program to divide two numbers and print on the screen.
+class DivideTwoNo
+{
+public static void main(String args[])
+	{
+		System.out.println(60/3);
+	}
+}
+=============================================================================================
+
+4) Write a Java program to print the result of the following operations.
+class OperationsResult
+{
+public static void main(String args[])
+	{
+int a=5,b=8,c=6;
+int d=-a+(b)*c;
+		System.out.println(d);
+
+		int f=55,g=9,k=9;
+		int l=(f+g)%k;
+		System.out.println(l);
+
+		int x=20,y=-3,z=5,v=8;
+		int s=x+(-y)*z/v;
+		System.out.println(s);
+
+		int p=5,m=15,e=2,t=8,u=3;
+		int w=p+m/u*e-t%u;
+		System.out.println(w);
+	}
+}
+
+========================================================================================================
+5) Write a Java program that takes two numbers as input and display the product of two numbers.
+import java.util.Scanner;
+class ProductTwoNo
+{
+	public static void main(String args[])
+	{	
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Input first number: ");
+		int num1=scan.nextInt();
+System.out.print("Input second number: ");
+		int num2=scan.nextInt();
+System.out.println(num1 + "x" +num2 + "=" +num1*num2);
+	}
+}
+=========================================================================================================================
+
+6) Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers.
+import java.util.Scanner;
+class Operations
+{
+	public static void main(String[] args) 
+	{
+		Scanner p=new Scanner(System.in);
+		int n1,n2;
+System.out.print("Input first number: ");
+		n1=p.nextInt();
+System.out.print("Input second number: ");
+		n2=p.nextInt();
+		
+		System.out.println(n1 + " + " + n2 + " = " +(n1 + n2));
+		System.out.println(n1 + " - " + n2 + " = " + (n1 - n2));
+		System.out.println(n1 + " x " + n2 + " = " + (n1 * n2));
+		System.out.println(n1 + " / " + n2 + " = " + (n1 / n2));
+		System.out.println(n1 + " mod " + n2 + " = " + (n1 % n2));
+		
+	}
+
+}
+=========================================================================================================================
+7) Write a Java program that takes a number as input and prints its multiplication table upto 10.
+ Test Data: Input a number: 8
+import java.util.Scanner;
+public class MultiplicationTable {
+
+	public static void main(String[] args) {
+		Scanner ab=new Scanner(System.in);
+		int n,i;
+		System.out.print("Input a number: ");
+		n=ab.nextInt();
+		for(i=1;i<=10;i++)
+		{
+			System.out.println(n + "x" + i + " = " + (n*i));
+		}
+
+	}
+}
+
+
+
+
+=====================================================================================================
+
+8) Write a Java program to display the following pattern.
+public class SamplePattern {
+public static void main(String[] args)
+ {
+System.out.println("   J    a   v     v  a ");
+       		 System.out.println("   J   a a   v   v  a a");
+      		  System.out.println("J  J  aaaaa   V V  aaaaa");
+       		 System.out.println(" JJ  a     a   V  a     a");
+
+	}
+
+}
+======================================================================================
+
+9) Write a Java program to compute the specified expressions and print the output. 
+Test Data: ((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))
+public class SpecifiedExp {
+
+	public static void main(String[] args) {
+		System.out.println((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+
+	}
+
+}
+
+===========================================================================================================
+
+10) Write a Java program to compute a specified formula. Specified Formula : 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+public class SpecifiedFormula {
+
+	public static void main(String[] args) {
+		
+		double ai= 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+		System.out.println(ai);
+
+	}
+
+}
+======================================================================================================================================
+
+11) Write a Java program to print the area and perimeter of a circle. Test Data: Radius = 7.5
+import java.util.Scanner;
+class circle 
+{
+private float radius=0.0f;
+		 private float area=0.0f;
+		 private float perimeter=0.0f;
+		public void readRadius()
+		{
+Scanner sc=new Scanner(System.in);
+				System.out.print("Enter radius:");
+				radius=sc.nextFloat();	
+		}
+public float getPerimeter()
+		{	
+				perimeter =  (float) (2* Math.PI *radius);
+				return perimeter;
+		}
+		public float getArea()
+		{	
+				area= (float) (Math.PI *radius*radius);
+				return area;
+}}
+
+
+public  class AreaAndperimeter
+{
+public static void main(String []s)
+{
+circle area=new circle();
+		area.readRadius();
+		System.out.println("Perimeter is:" + area.getPerimeter());
+		System.out.println("Area is:" + area.getArea());
+		
+	}
+}
+
+====================================================================================================================
+12) Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+import java.util.Scanner;
+public class AverageNumbers {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Enter the first number: ");
+		double num1=scan.nextDouble();
+		System.out.print("Enter the second number: ");
+		double num2=scan.nextDouble();
+		System.out.print("Enter the third number: ");
+		double num3=scan.nextDouble();
+		System.out.print("Average of entered number: " + avg(num1,num2,num3));
+
+	}
+
+	public static double avg(double a,double b,double c) 
+	{
+		return (a+b+c)/3;
+		
+	}
+}
+======================================================================================================================
+13) Write a Java program to print the area and perimeter of a rectangle. Test Data: Width = 5.5 Height = 8.5
+public class AreaPerimeterRectangle
+ {
+public static void main(String[] args) 
+{
+		final double width = 5.6;
+        		final double height = 8.5;
+ double area = width * height;
+       		 double perimeter = 2*(height + width)
+System.out.printf("Area is %.1f * %.1f = %.2f \n", width, height, area);
+        		System.out.printf("Perimeter is 2*(%.1f + %.1f) = %.2f \n", height, width, perimeter);
+	}
+
+===============================================================================================================
+14) Write a Java program to print an American flag on the screen.
+public class AmericanFlag
+ {
+public static void main(String[] args) 
+{
+		System.out.println("* * * * * * ================================== ");
+		System.out.println(" * * * * *  ==================================  ");
+		System.out.println("* * * * * * ================================== ");
+		System.out.println(" * * * * *  ================================== ");
+		System.out.println("* * * * * * ==================================");
+		System.out.println(" * * * * *  ================================== ");
+		System.out.println("* * * * * * ==================================  ");
+		System.out.println(" * * * * *  ==================================");
+		System.out.println("* * * * * * ================================== ");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		
+
+	}
+
+}
+
+======================================================================================================
+15) Write a Java program to swap two variables.
+import java.util.Scanner;
+public class SwapVariables 
+{
+public static void main(String[] args)
+ {
+		int x,y,temp;
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Enter the first number x: ");
+		x=scan.nextInt();
+		System.out.print("Enter the second number y: ");
+		y=scan.nextInt();
+		System.out.println("Before Swapping\nx = "+x+"\ny = "+y);
+		temp=x;
+		x=y;
+		y=temp;
+System.out.println("After Swapping\nx = "+x+"\ny = "+y);
+	}
+
+}
+==========================================================================================
+16) Write a Java program to print a face.
+public class PrintFace {
+public static void main(String[] args) {
+System.out.println(" +\"\"\"\"\"+ ");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '-' | ");
+        System.out.println(" +-----+ ");
+	}
+
+}
+===========================================================================================================
+
+17) Write a Java program to add two binary numbers.
+ Input Data: Input first binary number: 10 Input second binary number: 11
+import java.util.Scanner;
+public class AddBinaryNumbers
+ {
+public static String add(String num1, String num2) 
+{
+int num1 Binary = Integer.parseInt(num1, 2);
+int num2 Binary = Integer.parseInt(num2, 2);
+int sumOfNumbers = num1Binary + num2Binary;
+ return Integer.toBinaryString(sumOfNumbers);
+    }
+ public static void main(String[] args) 
+{
+try (Scanner scan = new Scanner(System.in))
+ {
+		 System.out.print("Enter first binary number : ");
+           		 String number1 = scan.next();
+  		 System.out.print("Enter second binary number : ");
+           		 String number2 = scan.next();
+ System.out.println("Sum of two binary numbers :" + add(number1,number2));
+        }
+    }
+}
+=================================================================================================
+
+18) Write a Java program to convert a decimal number to binary number. 
+Input Data: Input a Decimal Number : 5
+import java.util.Scanner;
+public class DecimalToBinary 
+{
+public static void main(String[] args)
+ {
+long dec;
+	  	 Scanner scan= new Scanner(System.in);
+	      	System.out.print("Input a Decimal Number: ");
+	        	dec = scan.nextLong();
+	 	System.out.println("Binary Number is: " + decimalToBinary(dec));
+	    }
+ public static long decimalToBinary(long n)
+ {
+	        long remainder, binary = 0, i = 1;
+ while (n != 0)
+ {
+	            remainder = n % 2;
+	            n = n / 2;
+	            binary = binary + (remainder * i);
+	            i = i * 10;
+	        }
+	        return binary;
+	    }
+	
+
+	}
+
+===================================================================================================
+19) Write a Java program to convert a decimal number to hexadecimal number. 
+Input Data: Input a decimal number: 15
+import java.util.Scanner;
+public class DecimalToHexadecimal
+ {
+public static void main(String[] args) 
+{
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Input a decimal number: ");
+		int num=scan.nextInt();
+		int rem;
+		String str2=" ";
+		char hex[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+		while(num>0)
+		{
+			rem=num%16;
+			str2=hex[rem]+str2;
+			num=num/16;
+			
+		}
+		System.out.println("Hexadecimal number is:  "+str2);
+	}
+
+}
+==================================================================================================
+
+20) Write a Java program to convert a decimal number to octal number.
+ Input Data: Input a Decimal Number: 15
+import java.util.Scanner;
+public class DecimalToOctal 
+{
+public static void main(String[] args) 
+{
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Input a decimal number: ");
+		int num=scan.nextInt();
+		int rem;
+		String str2=" ";
+		char dec[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+		while(num>0)
+		{
+			rem=num%8;
+			str2=dec[rem]+str2;
+			num=num/8;
+			
+		}
+		System.out.println("Octal number is:  "+str2);
+	}
+
+
+}
+=======================================================================================================
+21)Write a Java program to convert a binary number to hexadecimal number. 
+Input Data: Input a Binary Number: 1101
+import java.util.Scanner;
+public class BinaryToHexadecimal 
+{
+		int number;
+		Scanner input=new Scanner(System.in);
+void BinaryValue()
+		{
+		System.out.print("Input a Binary Number: ");
+		number=Integer.parseInt(input.nextLine(),2);
+		}
+		void Conversion()
+		{
+			String str=Integer.toHexString(number);
+			System.out.println("HexaDecimal value: "+str);
+		}
+	
+	public static void main(String[] args) 
+{
+		BinaryToHexadecimal obj=new BinaryToHexadecimal();
+		obj.BinaryValue();
+		obj.Conversion();
+	}
+
+}
+
+=============================================================================
+
+
+
+
+
+
+
